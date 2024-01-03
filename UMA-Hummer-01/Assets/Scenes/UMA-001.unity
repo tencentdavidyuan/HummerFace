@@ -5678,6 +5678,14 @@ MonoBehaviour:
       _compatibleRaces:
       - HumanFemaleDCS
       - HumanFemale
+    - _recipeName: MaleRobe
+      _compatibleRaces:
+      - HumanMale
+      - HumanMaleDCS
+    - _recipeName: MaleHair1
+      _compatibleRaces:
+      - HumanMale
+      - HumanMaleDCS
   raceAnimationControllers:
     defaultAnimationController: {fileID: 9100000, guid: eb280940c811fab4a9e3ddf09381c343, type: 2}
     animators:
@@ -5732,7 +5740,7 @@ MonoBehaviour:
       valuesConverted: 0
     - name: Skin
       channelMask:
-      - {r: 1, g: 1, b: 1, a: 1}
+      - {r: 0.8301887, g: 0.5208259, b: 0.5208259, a: 1}
       - {r: 1, g: 1, b: 1, a: 1}
       - {r: 1, g: 1, b: 1, a: 1}
       channelAdditiveMask:
@@ -5769,6 +5777,42 @@ MonoBehaviour:
     - name: Undies
       channelMask:
       - {r: 1, g: 1, b: 1, a: 1}
+      - {r: 1, g: 1, b: 1, a: 1}
+      - {r: 1, g: 1, b: 1, a: 1}
+      channelAdditiveMask:
+      - {r: 0, g: 0, b: 0, a: 0}
+      - {r: 0, g: 0, b: 0, a: 0}
+      - {r: 0, g: 0, b: 0, a: 0}
+      PropertyBlock:
+        alwaysUpdate: 0
+        serializedProperties: []
+      foldout: 0
+      _name: 
+      _color: {r: 1, g: 1, b: 1, a: 1}
+      _metallicGloss: {r: 0, g: 0, b: 0, a: 0}
+      Raw: 0
+      valuesConverted: 0
+    - name: Shirt
+      channelMask:
+      - {r: 0.41568628, g: 0.015686275, b: 1, a: 1}
+      - {r: 1, g: 1, b: 1, a: 1}
+      - {r: 1, g: 1, b: 1, a: 1}
+      channelAdditiveMask:
+      - {r: 0, g: 0, b: 0, a: 0}
+      - {r: 0, g: 0, b: 0, a: 0}
+      - {r: 0, g: 0, b: 0, a: 0}
+      PropertyBlock:
+        alwaysUpdate: 0
+        serializedProperties: []
+      foldout: 0
+      _name: 
+      _color: {r: 1, g: 1, b: 1, a: 1}
+      _metallicGloss: {r: 0, g: 0, b: 0, a: 0}
+      Raw: 0
+      valuesConverted: 0
+    - name: ShirtAccent
+      channelMask:
+      - {r: 0.9098039, g: 0.03137255, b: 0.03137255, a: 1}
       - {r: 1, g: 1, b: 1, a: 1}
       - {r: 1, g: 1, b: 1, a: 1}
       channelAdditiveMask:
