@@ -5,6 +5,9 @@ using UnityEditor;
 
 namespace UMA
 {
+	/// <summary>
+	/// ISerializationCallbackReceiver：实现此方法以在 Unity 序列化对象之前接收回调。
+	/// </summary>
 	[System.Serializable]
 	public class SharedColorTable : ScriptableObject, ISerializationCallbackReceiver
 	{

@@ -8,6 +8,7 @@ namespace UMA.Examples
 {
     //DOS MODIFIED really we want this to 'look at' the target bone but move with the Global one
     //not sure how to do that though...
+    //DOS 修改确实我们希望它能够“查看”目标骨骼，但与全局骨骼一起移动，但不知道如何做到这一点......
     //TODO if the user changes the size of the head to be really big we end up inside. We need this to calculate its minimum distance based on the size of thecapsule collider (assuming this is correct
     [AddComponentMenu("Camera-Control/Mouse Orbit with zoom")]
     public class UMAMouseOrbitImproved : MonoBehaviour

@@ -6,6 +6,7 @@ namespace UMA
 {
 	/// <summary>
 	/// Gloal container for various UMA objects in the scene. Marked as partial so the developer can add to this if necessary
+	/// 场景中各种 UMA 对象的全局容器。 标记为 partial，以便开发人员可以在必要时添加
 	/// </summary>
 	public abstract class UMAContextBase : MonoBehaviour
 	{
@@ -38,6 +39,7 @@ namespace UMA
 
 		/// <summary>
 		/// Gets a race by name, if it has been added to the library
+		/// 按名称获取种族（如果已添加到库中）
 		/// </summary>
 		/// <returns>The race.</returns>
 		/// <param name="name">Name.</param>
@@ -45,6 +47,7 @@ namespace UMA
 
 		/// <summary>
 		/// Gets a race by name hash, if it has been added to the library.
+		/// 如果种族已添加到库中，则按名称哈希值获取种族。
 		/// </summary>
 		/// <returns>The race.</returns>
 		/// <param name="nameHash">Name hash.</param>
@@ -52,12 +55,14 @@ namespace UMA
 
 		/// <summary>
 		/// Ensure we have a race key
+		/// 确保我们有种族的Key
 		/// </summary>
 		/// <param name="name"></param>
 		public abstract void EnsureRaceKey(string name);
 
 		/// <summary>
 		/// Gets a race by name, if the library is a DynamicRaceLibrary it will try to find it.
+		/// 按名称获取种族，如果库是 DynamicRaceLibrary，它将尝试找到它。
 		/// </summary>
 		/// <returns>The race.</returns>
 		/// <param name="name">Name.</param>
@@ -65,6 +70,7 @@ namespace UMA
 
 		/// <summary>
 		/// Gets a race by name hash, if the library is a DynamicRaceLibrary it will try to find it.
+		/// 按名称哈希获取种族，如果库是 DynamicRaceLibrary，它将尝试找到它。
 		/// </summary>
 		/// <returns>The race.</returns>
 		/// <param name="nameHash">Name hash.</param>
@@ -72,6 +78,7 @@ namespace UMA
 
 		/// <summary>
 		/// Get a race by name hash. possibly allowing updates.
+		/// 按名称哈希获取种族。 可能允许更新。
 		/// </summary>
 		/// <param name="nameHash"></param>
 		/// <param name="allowUpdate"></param>
@@ -80,24 +87,28 @@ namespace UMA
 
 		/// <summary>
 		/// Array of all races in the context.
+		/// 上下文中所有种族的数组
 		/// </summary>
 		/// <returns>The array of race data.</returns>
 		public abstract RaceData[] GetAllRaces();
 
 		/// <summary>
 		/// return races with no download
+		/// 
 		/// </summary>
 		/// <returns></returns>
 		public abstract RaceData[] GetAllRacesBase();
 
 		/// <summary>
 		/// Add a race to the context.
+		/// 在上下文中添加一个种族。
 		/// </summary>
 		/// <param name="race">New race.</param>
 		public abstract void AddRace(RaceData race);
 
 		/// <summary>
 		/// Instantiate a slot by name.
+		/// 按名称实例化插槽。
 		/// </summary>
 		/// <returns>The slot.</returns>
 		/// <param name="name">Name.</param>
@@ -105,6 +116,7 @@ namespace UMA
 
 		/// <summary>
 		/// Instantiate a slot by name hash.
+		/// 通过名称哈希实例化一个槽。
 		/// </summary>
 		/// <returns>The slot.</returns>
 		/// <param name="nameHash">Name hash.</param>
@@ -112,6 +124,7 @@ namespace UMA
 
 		/// <summary>
 		/// Instantiate a slot by name, with overlays.
+		/// 按名称实例化插槽，并带有覆盖层。
 		/// </summary>
 		/// <returns>The slot.</returns>
 		/// <param name="name">Name.</param>
@@ -120,6 +133,7 @@ namespace UMA
 
 		/// <summary>
 		/// Instantiate a slot by name hash, with overlays.
+		/// 通过名称哈希实例化一个插槽，并覆盖。
 		/// </summary>
 		/// <returns>The slot.</returns>
 		/// <param name="nameHash">Name hash.</param>
@@ -128,6 +142,7 @@ namespace UMA
 
 		/// <summary>
 		/// Check for presence of a slot by name.
+		/// 按名称检查插槽是否存在。
 		/// </summary>
 		/// <returns><c>True</c> if the slot exists in this context.</returns>
 		/// <param name="name">Name.</param>
@@ -135,6 +150,7 @@ namespace UMA
 
 		/// <summary>
 		/// Check for presence of a slot by name hash.
+		/// 通过名称哈希检查插槽是否存在。
 		/// </summary>
 		/// <returns><c>True</c> if the slot exists in this context.</returns>
 		/// <param name="nameHash">Name hash.</param>
@@ -142,6 +158,7 @@ namespace UMA
 
 		/// <summary>
 		/// Add a slot asset to the context.
+		/// 将槽资源添加到上下文中。
 		/// </summary>
 		/// <param name="slot">New slot asset.</param>
 		public abstract void AddSlotAsset(SlotDataAsset slot);
@@ -155,6 +172,7 @@ namespace UMA
 
 		/// <summary>
 		/// Check for presence of an overlay by name hash.
+		/// 按名称检查是否存在覆盖。
 		/// </summary>
 		/// <returns><c>True</c> if the overlay exists in this context.</returns>
 		/// <param name="nameHash">Name hash.</param>
@@ -162,6 +180,7 @@ namespace UMA
 
 		/// <summary>
 		/// Instantiate an overlay by name.
+		/// 按名称实例化覆盖层。
 		/// </summary>
 		/// <returns>The overlay.</returns>
 		/// <param name="name">Name.</param>
@@ -169,6 +188,7 @@ namespace UMA
 
 		/// <summary>
 		/// Instantiate an overlay by name hash.
+		/// 通过名称哈希实例化覆盖。
 		/// </summary>
 		/// <returns>The overlay.</returns>
 		/// <param name="nameHash">Name hash.</param>
@@ -176,6 +196,7 @@ namespace UMA
 
 		/// <summary>
 		/// Instantiate a tinted overlay by name.
+		/// 按名称实例化有色覆盖层。
 		/// </summary>
 		/// <returns>The overlay.</returns>
 		/// <param name="name">Name.</param>
@@ -184,6 +205,7 @@ namespace UMA
 
 		/// <summary>
 		/// Instantiate a tinted overlay by name hash.
+		/// 按名称的哈希值实例化有色覆盖层。
 		/// </summary>
 		/// <returns>The overlay.</returns>
 		/// <param name="nameHash">Name hash.</param>
@@ -192,6 +214,7 @@ namespace UMA
 
 		/// <summary>
 		/// Add an overlay asset to the context.
+		/// 将 overlay 资源添加到上下文中。
 		/// </summary>
 		/// <param name="overlay">New overlay asset.</param>
 		public abstract void AddOverlayAsset(OverlayDataAsset overlay);

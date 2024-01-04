@@ -6,6 +6,7 @@ namespace UMA
 {
 	/// <summary>
 	/// Gloal container for various UMA objects in the scene.
+	/// 场景中各种 UMA 对象的全局容器。
 	/// </summary>
 	public class UMAGlobalContext : UMAContextBase
 	{

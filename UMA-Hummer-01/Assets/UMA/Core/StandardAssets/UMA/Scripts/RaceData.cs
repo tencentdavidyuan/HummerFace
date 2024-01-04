@@ -14,6 +14,10 @@ namespace UMA
 	/// converters. For example there are RaceData entries for Male Humans and
 	/// Female Humans, because they have slightly different TPoses and gender
 	/// specific DNA converters, despite sharing the same DNA types.
+	///
+	/// 在 UMA 中，"种族 "只不过是一个特定的 TPose 和一组 DNA 转换器。例如，有男性人类和
+	/// 女性人类的 RaceData 条目，因为他们的 TPose 和特定性别 DNA 转换器略有不同，尽管共
+	/// 享相同的 DNA 类型。
 	/// </remarks>
 	[PreferBinarySerialization]
 	[Serializable]

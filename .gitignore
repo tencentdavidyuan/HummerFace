@@ -4,3 +4,5 @@ UMA-Hummer-01/UserSettings
 UMA-Hummer-01/Logs
 *.csproj
 *.sln
+UMA-Hummer-01/.idea
+UMA-Hummer-01/obj

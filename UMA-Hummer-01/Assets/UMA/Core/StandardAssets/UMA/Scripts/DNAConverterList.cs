@@ -5,15 +5,22 @@ using UnityEngine;
 namespace UMA
 {
 	/// <summary>
-	/// A list that can hold both DnaConverterBahviours (legacy) and DynamicDNAConverterControllers or any other type that impliments IDNAConverter interface
-	/// It returns entries as IDNAConverters
+	/// A list that can hold both DnaConverterBahviours (legacy) and DynamicDNAConverterControllers
+	/// or any other type that impliments IDNAConverter interface It returns entries as IDNAConverters
+	///
+	/// 可以保存 DnaConverterBahviours（旧版）和 DynamicDNAConverterControllers 或任何其他实现 IDNAConverter
+	/// 接口的类型的列表 它以 IDNAConverters 形式返回条目
 	/// </summary>
 	[System.Serializable]
 	public class DNAConverterList
 	{
-		//Hmmm not sure this Object list is going to work because in 'Debug Mode' you can anything you like in there
-		//Also the prefab gets added as a prefab rather than the component on it
-		//We can Validate but that might be slow
+		// Hmmm not sure this Object list is going to work because in 'Debug Mode' you can anything you like in there
+		// Also the prefab gets added as a prefab rather than the component on it
+		// We can Validate but that might be slow
+		// 嗯，不确定这个对象列表是否有效，因为在“调试模式”下，您可以在其中添加任何您喜欢的内容
+		// 此外，预制件也被添加为预制件而不是其上的组件
+		// 我们可以验证，但这可能会很慢
+
 		[SerializeField]
 		private List<UnityEngine.Object> _converters = new List<Object>();
 
